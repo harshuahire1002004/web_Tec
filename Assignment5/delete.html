@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Entry</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #f9fbfc;
+    }
+
+    input[type="submit"] {
+      background-color: #ef5350;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #d32f2f;
+    }
+
+    label {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <form name="f1" method="post" action="delete.php">
+    <label>Enter the ID to Delete</label><br/>
+    <input type="text" name="uid" placeholder="Enter ID" required/><br/>
+    <input type="submit" name="but1" value="Delete"/>
+  </form>
+</body>
+</html>
